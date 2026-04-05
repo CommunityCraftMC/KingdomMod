@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "kingdommod",
+  "version": "${version}",
+  "name": "KingdomMod",
+  "description": "TL en zwem mod voor de communitycraft server",
+  "authors": ["StephandeBeer"],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/kingdommod/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.stephan.kingdommod.KingdomMod"
+    ],
+    "modmenu": [
+      "dev.stephan.kingdommod.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "kingdommod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "cloth-config": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
