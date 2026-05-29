@@ -3,7 +3,7 @@
   "id": "kingdommod",
   "version": "${version}",
   "name": "KingdomMod",
-  "description": "TL en zwem mod voor de communitycraft server",
+  "description": "Algemene mod gemaakt voor de CommunityCraft server, met verschillende features die je speelervaring verbeterd.",
   "authors": ["StephandeBeer"],
   "contact": {},
   "license": "All-Rights-Reserved",
