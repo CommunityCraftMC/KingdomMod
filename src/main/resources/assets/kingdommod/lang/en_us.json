@@ -3,6 +3,7 @@
   "text.autoconfig.kingdommod.option.SwimAnimation": "1.8 Swim Animation",
   "text.autoconfig.kingdommod.option.ShowRepairCost": "Show Repair Cost Showing",
   "text.autoconfig.kingdommod.option.AutoFollow": "Auto Follow",
+  "text.autoconfig.kingdommod.option.FollowWaypointScale": "Waypoint Scale",
   "text.autoconfig.kingdommod.option.ShowAbilityCooldown": "Show Cooldown Displays"
 
 }

@@ -14,6 +14,8 @@ public class KingdomModConfig implements ConfigData {
     public boolean ShowRepairCost = false;
     public boolean ShowAbilityCooldown = false;
     public boolean AutoFollow = false;
+    @ConfigEntry.BoundedDiscrete(min = 10, max = 500)
+    public int FollowWaypointScale = 100;
 
     @ConfigEntry.Gui.Excluded
     public Map<String, HudPos> abilityHudPositions = new HashMap<>();

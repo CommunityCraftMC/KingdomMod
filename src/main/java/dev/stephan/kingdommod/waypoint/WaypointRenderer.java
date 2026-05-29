@@ -3,6 +3,7 @@ package dev.stephan.kingdommod.waypoint;
 import com.mojang.authlib.GameProfile;
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.systems.RenderSystem;
+import dev.stephan.kingdommod.KingdomMod;
 import net.fabricmc.fabric.api.client.rendering.v1.WorldRenderEvents;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.TextRenderer;
@@ -38,7 +39,7 @@ public class WaypointRenderer {
             adjustedDistance = maxDistance;
         }
 
-        float scale = ((float) adjustedDistance * 0.1F + 1.0F) * 0.0266F;
+        float scale = ((float) adjustedDistance * 0.1F + 1.0F) * 0.0266F * (KingdomMod.config.FollowWaypointScale / 100f);
 
         matrices.push();
         matrices.multiply(RotationAxis.POSITIVE_X.rotationDegrees(camera.getPitch()));
@@ -88,7 +89,7 @@ public class WaypointRenderer {
         buffer.vertex(positionMatrix, -width, -height, 0).color(r, g, b, opacity).texture(hu1, hv1);
         buffer.vertex(positionMatrix, -width, height, 0).color(r, g, b, opacity).texture(hu1, hv2);
         buffer.vertex(positionMatrix, width, height, 0).color(r, g, b, opacity).texture(hu2, hv2);
-        buffer.vertex(positionMatrix, width, -height, 0).color(r, g, b, opacity).texture(hu2, hv1);
+        buffer.vertex(positionMatrix, width, -height , 0).color(r, g, b, opacity).texture(hu2, hv1);
 
 
 
